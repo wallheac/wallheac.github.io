@@ -1,0 +1,21 @@
+body {
+  background-color: #eeeeee;
+  color: #030303;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 15px;
+}
+
+.content {
+  background-color: #030303;
+  color: #eeeeee;
+  display: flex;
+  padding: 15px;
+}
+
+p {
+  margin: 0 15px;
+}
