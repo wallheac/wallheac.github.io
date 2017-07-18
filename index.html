@@ -5,13 +5,43 @@
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/theme.css">
     <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" name="viewport">
 <style>
+body{
+  display: flex;
+  flex-flow: column nowrap;
+}
 .header{
-  background-color: rgb(58, 15, 79);
+  background-color: #330867;
   color: white;
+  width: 100%;
 }
 .content{
-  background-color: rgb(58, 15, 79);
   color: white;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.bio{
+  display:flex;
+}
+.projects{
+  display: flex;
+  flex: 1 1 auto;
+}
+.java{
+  width: 50%;
+}
+.webDev{
+  width: 50%;
+}
+ul{
+  list-style: none;
+}
+li{
+  padding: .7em;
+}
+p{
+  padding: .3em;
 }
 </style>
   </head>
@@ -23,11 +53,60 @@
     </div>
 
     <div class='content'>
-      <img src="assets/images/me.jpg" alt="wallheac" class="thumbnail">
-      <p>
-        I am a professor of American History and Women's and Gender Studies looking to transition to a career in programming. My interesting include swing dancing, Crossfit, and competitive Olympic weightlifting. My areas of interest in the world of programming are still developing. I'm enjoying learning web development and Java at the moment. I am working on improving my coding skills by participating in Launchcode's CoderGirl in St. Louis, where I'm focused on web development. I have also taken Harvard's introduction to computer science online and am learning Java independently.
-      </p>
+
+      <div class ='bio'>
+        <div class ='image'>
+          <img src="assets/images/me.jpg" alt="wallheac" class="thumbnail">
+        </div>
+        <div class='bioText'>
+          <p>
+          I am a practically-minded maker of things. I tend to approach a problem with the attitude that there has to be a way to get the thing to do what I want. If that way doesn’t seem to exist, I’ll figure out how to make it. Weird things I have made include: my own drier for beef jerky, a second field in my graduate program because they didn't offer what I wanted, and a hacked radio transmitter for an iPod before iPod docks were common.</p>
+          <p>My background in programming is autodidactic and mostly informal. I started out building websites for academic events using content-management systems. In many ways, this was simply an extension of my DIY ethic. I have participated in Launchcode’s CS50x and am currently attending CoderGirl.  I have also been learning Java on my own. I attended the Silver Linings Data Science and DevOps conference and go to talks and a few meetups. This list will grow as I learn more about what is available.</p>
+          <p>My formal education consists of an undergraduate degree in Social Science Education, a PhD in 20th Century American History with a focus on the history of business and labor. I also have a graduate certificate in Women’s and Gender Studies. I am an organizer for the Policy History Conference. I helped create and run a National Endowment for the Humanities six-week seminar on teaching World History. I have presented at several conferences and contributed short pieces to encyclopedias in the course of my academic career.</p>
+        </div>
     </div>
+
+      <h2>Projects</h2>
+      <h3>These projects show some of what I have learned</h3>
+      <div class='projects'>
+      <div class='java'>
+        <h3>Java</h3>
+        <ul>
+          <li>
+            <p><em>Map Grader</em></p>
+            <p>I wrote this for a very practical reason: to save me time grading student assignments. It also gave me practice constructing a small application from scratch in Java</p>
+            <a href="https://github.com/wallheac/MapGrader">Map Grader</a>
+          </li>
+          <li>
+            <p><em>Data Cleaner for Library Records</em></p>
+            <p>This project is still under construction. It is part of a larger project to build a recommendation engine for history books. It takes in delimited data from a piece of freeware called MARCedit, which itself takes in MARC records from library databases. It regularizes the data for import into a Neo4j graph database</p>
+            <a href="https://github.com/wallheac/csvCleanerForMARCrec">History Recommendation Engine Data Cleaner</a>
+          </li>
+        </ul>
+      </div>
+      <div class='webDev'>
+        <h3>Web Development</h3>
+        <ul>
+          <li>
+            <p><em>Fix Cakes</em></p>
+            <p>This website was a chance to practice CSS, especially flexbox, and a bit of jQuery</p>
+            <a href="https://github.com/wallheac/Fix-Cakes">Fix Cakes....mmmmmmm cake!</a>
+          </li>
+          <li>
+            <p><em>Cat Lady Scale</em></p>
+            <p>This website was a chance to build a more responsive, interactive website with Javascript. And, really, the internet always needs more cats</p>
+            <a href="https://github.com/wallheac/cat_lady_scale">Cat Lady Scale</a>
+          </li>
+          <li>
+            <p><em>Trello Clone</em></p>
+            <p>My first attempt at a website in React. Still under construction</p>
+            <a href="https://github.com/wallheac/trello_react_project">Trello Clone</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
     <script src='assets/scripts/jquery-3.1.1.min.js'></script>
     <script src='assets/scripts/main.js'></script>
   </body>
